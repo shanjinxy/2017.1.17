@@ -35,7 +35,13 @@
     } else {
         download.setAttribute('href', 'http://a.app.qq.com/o/simple.jsp?pkgname=com.wallstreetcn.meepo&ckey=CK1348508576428&')
     }
-
+    download.addEventListener('click',function () {
+        ga('send', 'event', {
+            eventCategory: '云开信安',
+            eventAction: 'click',
+            eventLabel: '云开信安'}
+        );
+    },false)
 
 </script>
 <script>
