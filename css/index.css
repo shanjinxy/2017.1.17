@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+html {
+    font-size: 100px;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+/*修改第三处媒体查询*/
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 85px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 140px;
+    }
+}
+
+.layout {
+    width: 100%;
+    background: #EC4346 url("../images/bg.jpg");
+    max-width: 750px;
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.layout header {
+    width: 100%;
+}
+
+.layout header img {
+    /*1.13 修改一处*/
+    width: 98%;
+    margin: 0 auto;
+}
+
+.layout .text {
+    position: absolute;
+    color: #F3F3F2;
+    top: 50%;
+    padding: 0 10%;
+
+}
+
+.layout .text p {
+    font-size: 0.14rem;
+    line-height: 1.5;
+}
+.layout .text p:nth-of-type(2){
+    margin-top: 0.3rem;
+}
+.layout .download {
+    height: 0.35rem;
+    width: 100%;
+    color: #ED6C75;
+    background-color: transparent;
+    font-size: 0.18rem;
+    margin-top: 0.4rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ED6C75;
+    text-align: center;
+    font-family: "microsoft yahei";
+}
+
