@@ -49,21 +49,17 @@ html {
 .layout header {
     width: 100%;
 }
-
 .layout header img {
     /*1.13 修改一处*/
     width: 98%;
     margin: 0 auto;
 }
-
 .layout .text {
     position: absolute;
     color: #F3F3F2;
     top: 50%;
     padding: 0 10%;
-
 }
-
 .layout .text p {
     font-size: 0.14rem;
     line-height: 1.5;
@@ -72,7 +68,9 @@ html {
     margin-top: 0.3rem;
 }
 .layout .download {
-    height: 0.35rem;
+    display: block;
+    height: 0.36rem;
+    line-height: 0.36rem;
     width: 100%;
     color: #ED6C75;
     background-color: transparent;
