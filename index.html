@@ -16,37 +16,13 @@
     </header>
     <div class="text">
         <p>活动期间下载选股宝的用户，在选股宝首页免费领取华住酒店集团金会员，尊享汉庭、全季、怡莱、星程、海友、宜必思、美爵、美居、诺富特……等全国4000多家酒店8.8折优惠。</p>
-        <a type="text" class="download"
+        <a type="text" class="download" href="http://url.cn/43fOVnc"
            id="donwload">立 即 领 取</a>
         <p>2017年1月18日至2017年3月19日</p>
     </div>
 </div>
-<script>
-    function getUrlParam(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) return unescape(r[2]);
-        return null;
-    }
-    var download = document.getElementById('donwload');
-    var from = getUrlParam('from');
-    if (from === "xgb") {
-        download.setAttribute('href', 'http://url.cn/43fOVnc')
-    } else {
-        download.setAttribute('href', 'http://a.app.qq.com/o/simple.jsp?pkgname=com.wallstreetcn.meepo&ckey=CK1348508576428&')
-    }
-    download.addEventListener('click',function () {
-        ga('send', 'event', {
-            eventCategory: '云开信安',
-            eventAction: 'click',
-            eventLabel: '云开信安'}
-        );
-    },false)
 
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
 <script>
-
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
@@ -74,6 +50,30 @@
 
     ga('create', 'UA-64451198-1', 'auto');
     ga('send', 'pageview');
+</script>
+<script>
+    var download = document.getElementById('donwload');
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    var from = getUrlParam('from');
+    if (from == "xgb") {
+        download.setAttribute('href', 'http://url.cn/43fOVnc')
+    } else {
+        download.setAttribute('href', 'http://a.app.qq.com/o/simple.jsp?pkgname=com.wallstreetcn.meepo&ckey=CK1348508576428&')
+    }
+
+    download.addEventListener('click',function () {
+        ga('send', 'event', {
+            eventCategory: '云开信安',
+            eventAction: 'click',
+            eventLabel: '云开信安'}
+        );
+    },false)
+
 </script>
 </body>
 </html>
